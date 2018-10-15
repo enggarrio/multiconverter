@@ -86,6 +86,31 @@
 					<input class="input100" type="text" name="converteroptions[resize]" placeholder="widthxheight (100x150)">
 				</div>
 
+				<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">Color Depth</span>
+					<div>
+						<select class="js-select2" name="converteroptions[command]">
+							<option value="">No change</option>
+							<option value="{INPUTFILE} -depth 1 {OUTPUTFILE}">1</option>
+							<option value="{INPUTFILE} -depth 2 {OUTPUTFILE}">2</option>
+							<option value="{INPUTFILE} -depth 4 {OUTPUTFILE}">4</option>
+							<option value="{INPUTFILE} -depth 8 {OUTPUTFILE}">8</option>
+						</select>
+						<div class="dropDownSelect2"></div>
+					</div>
+				</div>
+
+				<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">Gray Scale</span>
+					<div>
+						<select class="js-select2" name="converteroptions[grayscale]">
+							<option value="false">No</option>
+							<option value="true">Yes</option>
+						</select>
+						<div class="dropDownSelect2"></div>
+					</div>
+				</div>
+
 				<input type="hidden" name="apikey" value="RjoWdTotAbDTt9Zeo2ENrslTCVcQZhbjM2KeWtbtKT7iemPLL8o3hy0DhYnfUdqH">
 				<input type="hidden" name="input" value="upload">
 				<input type="hidden" name="wait" value="true">
